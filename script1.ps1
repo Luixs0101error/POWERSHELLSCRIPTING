@@ -1,6 +1,6 @@
-function Start-ProgressBar { #Explicación: Declara una función llamada Start-ProgressBar y abre su bloque de código.
-    [CmdletBinding()] #Explicación: Habilita características avanzadas para la función (p. ej., manejo de parámetros y soporte para parámetros comunes).
-    param ( #Explicación: Inicia la definición de los parámetros que recibirá la función.
+function Start-ProgressBar {      #Explicación: Declara una función llamada Start-ProgressBar y abre su bloque de código.
+    [CmdletBinding()]    #Explicación: Habilita características avanzadas para la función (p. ej., manejo de parámetros y soporte para parámetros comunes).
+    param (               #Explicación: Inicia la definición de los parámetros que recibirá la función.
 
         [Parameter(Mandatory = $true)] #Explicación: Indica que el siguiente parámetro es obligatorio.
         $Title, #Explicación: Parámetro texto para el título que se mostrará en la barra de progreso (actividad).
@@ -26,4 +26,4 @@ function Start-ProgressBar { #Explicación: Declara una función llamada Start-P
 } 
 
 # Call the function
-Start-ProgressBar -Title "Test timeout" -Timer 30 #Explicación: Ejecuta la función: muestra la barra por 30 segundos con ese título.
+Start-ProgressBar -Title "Test timeout" -Timer 30 #
