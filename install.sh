@@ -1,3 +1,4 @@
+##########################################
 # Prerequisites
 
 # Update the list of packages Explicación: Refresca los índices de paquetes disponibles desde los repositorios configurados.
