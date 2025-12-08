@@ -17,9 +17,13 @@ function Start-ProgressBar { #Explicación: Declara una función llamada Start-P
         $percentComplete = ($i / $Timer) * 100 #Explicación: Calcula el porcentaje completado en base al tiempo transcurrido ($i) y el total ($Timer).
 
 
-        Write-Progress -Activity $Title -Status "$i seconds elapsed" -PercentComplete $percentComplete
+        Write-Progress -Activity $Title -Status "$i seconds elapsed" -PercentComplete $percentComplete #Explicación: Muestra la barra de progreso en la consola:
+
+#Activity $Title: título de la tarea.
+#Status "$i seconds elapsed": mensaje de estado (segundos transcurridos).
+#PercentComplete $percentComplete: porcentaje que avanza la barra.
     }
 } 
 
 # Call the function
-Start-ProgressBar -Title "Test timeout" -Timer 30
+Start-ProgressBar -Title "Test timeout" -Timer 30 #Explicación: Ejecuta la función: muestra la barra por 30 segundos con ese título.
