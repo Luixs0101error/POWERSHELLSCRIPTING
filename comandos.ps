@@ -1,0 +1,17 @@
+# Update the package list from repositories
+sudo apt update
+
+# Upgrade all installed packages to their latest versions
+sudo apt upgrade
+
+# Install the 'parted' tool (used for disk partition management)
+sudo apt install parted
+
+# List all disk partitions using parted (-l = list)
+# Then print a separator line
+# Then show block devices with filesystem info (lsblk -f)
+# Then print a blank line for readability
+sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e
+
+# Show block devices with filesystem details (again, standalone)
+lsblk -f
