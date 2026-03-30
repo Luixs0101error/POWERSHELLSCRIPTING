@@ -15,3 +15,7 @@ sudo parted -l && echo -e "\n---\n" && lsblk -f && echo -e
 
 # Show block devices with filesystem details (again, standalone)
 lsblk -f
+
+#Check if the directory /sys/firmware/efi exists (this indicates a UEFI system)
+[ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
+
