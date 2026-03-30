@@ -19,8 +19,8 @@ lsblk -f
 #Check if the directory /sys/firmware/efi exists (this indicates a UEFI system)
 [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
 
-Create archive
+#Create archive
 echo "esto es un archivo" > archivo.txt
 
-Start the archive
+#Start the archive
 stat archivo.txt
